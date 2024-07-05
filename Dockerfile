@@ -1,3 +1,4 @@
+##agregando cambios 
 # Partimos de una base oficial de python
 FROM python
 
@@ -9,7 +10,7 @@ COPY . /app
 
 # Ejecutamos pip para instalar las dependencias en el contenedor
 RUN pip install --trusted-host pypi.python.org -r requiere.txt
-
+RUN pip install nano 
 # Indicamos que este contenedor se comunica por el puerto 80/tcp
 EXPOSE 80
 
