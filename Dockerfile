@@ -11,8 +11,6 @@ COPY . /app
 # Ejecutamos pip para instalar las dependencias en el contenedor
 RUN pip install --trusted-host pypi.python.org -r requiere.txt
 RUN pip install nano 
-RUN PIP INSTALLA OTER
-
 # Indicamos que este contenedor se comunica por el puerto 80/tcp
 EXPOSE 80
 
